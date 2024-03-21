@@ -1,0 +1,12 @@
+body{
+	width: 90%;
+    height: 97vh;
+	background: #FFEFE9;
+	padding:5%;
+	text-align:center;
+}
+
+img{
+	display: block;
+	transition:0.3s;
+}

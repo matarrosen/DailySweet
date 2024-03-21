@@ -1,0 +1,24 @@
+<!--
+confetti consepttaken from: https://codepen.io/lilianqian/pen/OxzeyZ
+-->   
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title class="hebrw">פינת מתוקים יומית</title>
+</head>
+<body>
+
+<h1 dir="rtl">המתוק היומי:</h1>
+<img id="image" >
+<script type="text/javascript">
+let image = document.getElementById('image');
+let images = ['images\imageExample.jpg','images\imageExample.jpg'];
+setInterval(function(){
+	let random = Math.floor(Math.random()*2);
+	image.src = images[random];
+},6000)
+</script>
+
+</body>
+</html>
