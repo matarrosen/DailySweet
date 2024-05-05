@@ -5,6 +5,16 @@ body{
 	padding:5%;
 	text-align:center;
 }
+.img-overlay-wrap slide {
+ width:100%;
+ height:auto;
+ position:absolute;
+}
+
+.img-overlay-wrap slide img {
+ width:100%;
+ height:auto;
+}
 
 .img-overlay-wrap {
   position: relative;
