@@ -12,7 +12,61 @@ confetti consepttaken from: https://codepen.io/lilianqian/pen/OxzeyZ
 <h1 dir="rtl">המתוק היומי:</h1>
 
 <div class="img-overlay-wrap">
-<img  src="images\imageExample2.jpeg" >
+<!-- <img  src="images\imageExample2.jpeg" > -->
+ <div class="slide">
+  <img src="images\image1.png">
+</div>
+
+<div class="slide">
+  <img src="images\image2.png">
+</div>
+
+<div class="slide">
+  <img src="images\image3.png">
+</div>
+<div class="slide">
+  <img src="images\image4.png">
+</div>
+
+<div class="slide">
+  <img src="images\image5.png">
+</div>
+
+<div class="slide">
+  <img src="images\image6.png">
+</div>
+
+<div class="slide">
+  <img src="images\image7.png">
+</div>
+
+<div class="slide">
+  <img src="images\image8.png">
+</div>
+
+<div class="slide">
+  <img src="images\image9.png">
+</div>
+
+<div class="slide">
+  <img src="images\image10.png">
+</div>
+
+<div class="slide">
+  <img src="images\image11.png">
+</div>
+
+<div class="slide">
+  <img src="images\image12.png">
+</div>
+
+<div class="slide">
+  <img src="images\image13.png">
+</div>
+
+<div class="slide">
+  <img src="images\image14.png">
+</div>    
 <svg viewBox="0 0 800 800" >
      	 <g class="confetti-cone">
      		 <path class="conf0" d="M131.5,172.6L196,343c2.3,6.1,11,6.1,13.4,0l65.5-170.7L131.5,172.6z"/>
@@ -116,5 +170,25 @@ confetti consepttaken from: https://codepen.io/lilianqian/pen/OxzeyZ
       		c-12.3-1.4-19.2,5.5-20.5,10.9"/>
 </svg>
  </div>
+
+     <p> If you want to add somone sweet, just let me know :)</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 1 day (86400000 ms)
+}
+</script>
+     
 </body>
 </html>
