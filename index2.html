@@ -188,7 +188,7 @@ function showSlides() {
     slides[i].style.display = "none"; 
   }
   <!-- slideIndex++; -->
-   slideIndex = Math.floor(Math.random()*slides.length);
+   slideIndex = Math.ceil(Math.random()*(slides.length+1));
   if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
   setTimeout(showSlides, 86400000); // Change image every 1 day (86400000 ms)
