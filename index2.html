@@ -174,8 +174,7 @@ confetti consepttaken from: https://codepen.io/lilianqian/pen/OxzeyZ
      <p> If you want to add somone sweet, just let me know :)</p>
 
 <script>
-<!-- var slideIndex = 0; -->
- var slideIndex = 6;
+ var slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -184,7 +183,8 @@ function showSlides() {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none"; 
   }
-  slideIndex++;
+  <!-- slideIndex++; -->
+   slideIndex = Math.floor(Math.random()*slides.length);
   if (slideIndex > slides.length) {slideIndex = 1} 
   slides[slideIndex-1].style.display = "block"; 
   setTimeout(showSlides, 30000); // Change image every 1 day (86400000 ms)
